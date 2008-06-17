@@ -1,0 +1,10 @@
+inherit gnome2
+
+DESCRIPTION="GNOME mathematical tool and GEL language interpreter"
+HOMEPAGE="http://www.jirka.org/genius.html"
+
+CYGCONF_ARGS="
+	--disable-gnome
+	--disable-update-mimedb
+	ac_cv_lib_termcap_tgetent=no
+"
