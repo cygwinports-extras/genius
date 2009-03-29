@@ -1,5 +1,6 @@
 category: Gnome Math
-requires: cygwin libgcc1 libglib2.0_0 libgmp3 libintl8 libmpfr1 libncurses9 libreadline6
+requires: cygwin genius libgcc1 libglib2.0_0 libgmp3 libgnomevfs2_0 libgtk2.0_0 libgtksourceview2.0_0 libintl8 libmpfr1 libncurses9 libpango1.0_0 libreadline6 libvte9
+external-source: genius
 sdesc: "GNOME mathematical tool and extension language (CLI)"
 ldesc: "Genius is a general purpose calculator program similiar in some 
 aspects to BC, Matlab, Maple or Mathematica. It is useful both as a 

@@ -1,0 +1,11 @@
+--- origsrc/genius-1.0.6/ve/Makefile.am	2009-03-02 02:24:56.000000000 -0600
++++ src/genius-1.0.6/ve/Makefile.am	2009-03-29 13:11:01.687500000 -0500
+@@ -50,7 +50,7 @@ test_ve_config_SOURCES = \
+ 	test-ve-config.c
+ 
+ test_ve_config_LDADD = \
+-	$(top_builddir)/ve/libvicious.a		\
++	libvicious.a		\
+ 	$(VICIOUS_LIBS)				\
+ 	$(INTLLIBS)				\
+ 	$(GLIB_LIBS)

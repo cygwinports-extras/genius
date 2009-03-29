@@ -1,0 +1,40 @@
+GENIUS plugins depend on symbols present in both genius.exe and 
+gnome-genius.exe.  Works fine for ELF, but as DLLs must have all symbols 
+resolved at link time, one would have to either:
+
+1) refactor the shared code into a libgenius.la, and link plugins against that;
+2) OR create an implib from one of the two EXEs, meaning that those plugins
+would be unusable in the other.
+
+Given that upstream is considering removing the plugin interface entirely
+for lack of use thereof, it's not really worth the time to implement either.
+
+--- origsrc/genius-1.0.6/src/Makefile.am	2009-03-02 02:25:19.000000000 -0600
++++ src/genius-1.0.6/src/Makefile.am	2009-03-29 13:50:36.015625000 -0500
+@@ -178,7 +178,7 @@ genius_LDADD = \
+ 	@READLINE_LIB@				\
+ 	@TERMCAP_LIB@
+ 
+-plugin_include_HEADERS = \
++noinst_HEADERS = \
+ 	genius-i18n.h	\
+ 	plug_api.h	\
+ 	geloutput.h	\
+@@ -194,7 +194,7 @@ plugin_include_HEADERS = \
+ 	lexer.h		\
+ 	eval.h
+ 
+-plugin_LTLIBRARIES = libtestplugin.la
++noinst_LTLIBRARIES = libtestplugin.la
+ 
+ libtestplugin_la_LDFLAGS = -module -avoid-version
+ 
+@@ -226,7 +226,7 @@ EXTRA_DIST = \
+ 	test.plugin.in \
+ 	genius.lang
+ 
+-Plugindesc_DATA = test.plugin
++noinst_DATA = test.plugin
+ 
+ Langdesc_DATA = genius.lang
+ 

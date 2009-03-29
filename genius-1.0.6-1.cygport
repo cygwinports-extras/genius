@@ -1,0 +1,17 @@
+inherit gnome2
+
+DESCRIPTION="GNOME mathematical tool and GEL language interpreter"
+HOMEPAGE="http://www.jirka.org/genius.html"
+
+PKG_NAMES="${PN} gnome-${PN}"
+PKG_HINTS="setup gnome"
+genius_CONTENTS="usr/bin/genius.exe usr/share/doc/ usr/share/${PN}/ usr/share/locale/"
+gnome_genius_CONTENTS="etc/ usr/bin/gnome-genius.exe usr/lib/genius/
+                       usr/share/application*/ usr/share/gnome/ usr/share/icons/
+                       usr/share/mime*/ usr/share/omf/"
+
+CYGCONF_ARGS="
+	--libexecdir=/usr/lib/genius
+	--disable-update-mimedb
+	ac_cv_lib_termcap_tgetent=no
+"
