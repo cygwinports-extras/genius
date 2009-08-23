@@ -9,38 +9,38 @@ Extension Language. In fact, many of the standard genius functions are
 written in GEL itself.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-60
   libgcc1-4.3.2-2
-  libglib2.0_0-2.20.0-1
-  libgmp3-4.2.4-2
-  libintl8-0.17-10
-  libmpfr1-2.4.1-2
+  libglib2.0_0-2.20.4-1
+  libgmp3-4.3.1-3
+  libintl8-0.17-11
+  libmpfr1-2.4.1-4
   libncurses9-5.7-14
-  libreadline6-5.2.13-11
+  libreadline6-5.2.14-12
 (gnome-genius)
-  libgdk_pixbuf2.0_0-2.16.0-1
+  libgdk_pixbuf2.0_0-2.16.5-1
   libgnomevfs2_0-2.26.0-1
-  libgtk2.0_0-2.16.0-1
-  libgtksourceview2.0_0-2.6.0-1
-  libpango1.0_0-2.24.0-1
-  libvte9-0.20.0-1
+  libgtk2.0_0-2.16.5-1
+  libgtksourceview2.0_0-2.6.2-1
+  libpango1.0_0-1.24.5-1
+  libvte9-0.20.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
   automake1.9-1.9.6-10
-  binutils-20080624-2
+  binutils-2.19.51-1
   bison-2.3-1
-  cygport-0.9.6-1
+  cygport-0.9.9-1
   flex-2.5.35-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  gettext-devel-0.17-19
-  gnome-common-2.26.0-1
-  libtool-2.2.7a-11
+  gettext-devel-0.17-11
+  gnome-common-2.26.0-2
+  libtool-2.2.7a-14
   make-3.81-2
-  pkg-config-0.23a-2
-  rarian-0.8.1-10
+  pkg-config-0.23b-10
+  rarian-0.8.1-11
   sed-4.1.5-2
 
 Canonical website:
@@ -52,16 +52,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack genius-1.0.6-X-src.tar.bz2
+  unpack genius-1.0.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./genius-1.0.6-X.cygport all
+  cygport ./genius-1.0.7-X.cygport all
 
 This will create:
-  /usr/src/genius-1.0.6-X-src.tar.bz2
-  /usr/src/genius-1.0.6-X.tar.bz2
-  /usr/src/gnome-genius-1.0.6-X.tar.bz2
+  /usr/src/genius-1.0.7-X-src.tar.bz2
+  /usr/src/genius-1.0.7-X.tar.bz2
+  /usr/src/gnome-genius-1.0.7-X.tar.bz2
 
 -------------------------------------------
 
@@ -182,6 +182,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.0.7-1 -----
+Version bump.
 
 ----- version 1.0.6-1 -----
 Initial release for Cygwin 1.7.

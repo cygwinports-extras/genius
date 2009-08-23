@@ -3,6 +3,12 @@ inherit gnome2
 DESCRIPTION="GNOME mathematical tool and GEL language interpreter"
 HOMEPAGE="http://www.jirka.org/genius.html"
 
+PATCH_URI="
+	1.0.6-disable-plugins.patch
+	1.0.6-exeext.patch
+	1.0.6-parallel-make.patch
+"
+
 PKG_NAMES="${PN} gnome-${PN}"
 PKG_HINTS="setup gnome"
 genius_CONTENTS="usr/bin/genius.exe usr/share/doc/ usr/share/${PN}/ usr/share/locale/"

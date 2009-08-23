@@ -1,3 +1,5 @@
+	* ve/Makefile.am (test_ve_config_LDADD): Fix parallel make.
+
 --- origsrc/genius-1.0.6/ve/Makefile.am	2009-03-02 02:24:56.000000000 -0600
 +++ src/genius-1.0.6/ve/Makefile.am	2009-03-29 13:11:01.687500000 -0500
 @@ -50,7 +50,7 @@ test_ve_config_SOURCES = \
