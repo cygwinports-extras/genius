@@ -5,8 +5,7 @@ HOMEPAGE="http://www.jirka.org/genius.html"
 
 PATCH_URI="
 	1.0.6-disable-plugins.patch
-	1.0.6-exeext.patch
-	1.0.6-parallel-make.patch
+	1.0.8-gtk_show_uri.patch
 "
 
 PKG_NAMES="${PN} gnome-${PN}"

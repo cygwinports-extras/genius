@@ -9,38 +9,38 @@ Extension Language. In fact, many of the standard genius functions are
 written in GEL itself.
 
 Runtime requirements:
-  cygwin-1.7.0-60
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.4-1
+  cygwin-1.7.0-62
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.22.2-1
   libgmp3-4.3.1-3
   libintl8-0.17-11
   libmpfr1-2.4.1-4
-  libncurses9-5.7-14
-  libreadline6-5.2.14-12
+  libncurses9-5.7-15
+  libreadline7-6.0.3-2
 (gnome-genius)
-  libgdk_pixbuf2.0_0-2.16.5-1
-  libgnomevfs2_0-2.26.0-1
-  libgtk2.0_0-2.16.5-1
-  libgtksourceview2.0_0-2.6.2-1
-  libpango1.0_0-1.24.5-1
-  libvte9-0.20.5-1
+  libgdk_pixbuf2.0_0-2.18.3-1
+  libgnomevfs2_0-2.24.2-1
+  libgtk2.0_0-2.18.3-1
+  libgtksourceview2.0_0-2.8.1-1
+  libpango1.0_0-1.26.0-1
+  libvte9-0.22.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.9-1.9.6-10
+  automake1.11-1.11-10
   binutils-2.19.51-1
   bison-2.3-1
-  cygport-0.9.9-1
+  cygport-0.9.10-1
   flex-2.5.35-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
   gettext-devel-0.17-11
-  gnome-common-2.26.0-2
+  gnome-common-2.28.0-1
   libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
-  rarian-0.8.1-11
+  rarian-0.8.1-12
   sed-4.1.5-2
 
 Canonical website:
@@ -52,136 +52,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack genius-1.0.7-X-src.tar.bz2
+  unpack genius-1.0.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./genius-1.0.7-X.cygport all
+  cygport ./genius-1.0.8-X.cygport all
 
 This will create:
-  /usr/src/genius-1.0.7-X-src.tar.bz2
-  /usr/src/genius-1.0.7-X.tar.bz2
-  /usr/src/gnome-genius-1.0.7-X.tar.bz2
+  /usr/src/genius-1.0.8-X-src.tar.bz2
+  /usr/src/genius-1.0.8-X.tar.bz2
+  /usr/src/gnome-genius-1.0.8-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/genius.exe
-  /usr/share/doc/genius/AUTHORS
-  /usr/share/doc/genius/COPYING
-  /usr/share/doc/genius/ChangeLog
-  /usr/share/doc/genius/NEWS
-  /usr/share/doc/genius/README
-  /usr/share/doc/genius/TODO
-  /usr/share/genius/gel/calculus/differentiation.gel
-  /usr/share/genius/gel/calculus/integration.gel
-  /usr/share/genius/gel/calculus/limits.gel
-  /usr/share/genius/gel/calculus/loader.gel
-  /usr/share/genius/gel/calculus/sums_products.gel
-  /usr/share/genius/gel/combinatorics/factorial.gel
-  /usr/share/genius/gel/combinatorics/loader.gel
-  /usr/share/genius/gel/combinatorics/misc.gel
-  /usr/share/genius/gel/combinatorics/recursive_sequences.gel
-  /usr/share/genius/gel/equation_solving/diffeqs.gel
-  /usr/share/genius/gel/equation_solving/find_root.gel
-  /usr/share/genius/gel/equation_solving/formulas.gel
-  /usr/share/genius/gel/equation_solving/loader.gel
-  /usr/share/genius/gel/functions/complex_numbers.gel
-  /usr/share/genius/gel/functions/delta.gel
-  /usr/share/genius/gel/functions/elementary.gel
-  /usr/share/genius/gel/functions/kernels.gel
-  /usr/share/genius/gel/functions/loader.gel
-  /usr/share/genius/gel/functions/numerical.gel
-  /usr/share/genius/gel/functions/orthogonal_polynomials.gel
-  /usr/share/genius/gel/lib.cgel
-  /usr/share/genius/gel/linear_algebra/bilinear_forms.gel
-  /usr/share/genius/gel/linear_algebra/linear_algebra.gel
-  /usr/share/genius/gel/linear_algebra/loader.gel
-  /usr/share/genius/gel/linear_algebra/misc.gel
-  /usr/share/genius/gel/linear_algebra/special_matrices.gel
-  /usr/share/genius/gel/linear_algebra/subspaces.gel
-  /usr/share/genius/gel/loader.gel
-  /usr/share/genius/gel/misc/loader.gel
-  /usr/share/genius/gel/misc/misc.gel
-  /usr/share/genius/gel/number_theory/factoring.gel
-  /usr/share/genius/gel/number_theory/loader.gel
-  /usr/share/genius/gel/number_theory/misc.gel
-  /usr/share/genius/gel/number_theory/modulus.gel
-  /usr/share/genius/gel/number_theory/primes.gel
-  /usr/share/genius/gel/number_theory/quadratic.gel
-  /usr/share/genius/gel/sets/basic.gel
-  /usr/share/genius/gel/sets/loader.gel
-  /usr/share/genius/gel/statistics/basic.gel
-  /usr/share/genius/gel/statistics/loader.gel
-  /usr/share/genius/gel/symbolic/differentiation.gel
-  /usr/share/genius/gel/symbolic/loader.gel
-  /usr/share/genius/genius-graph.png
-  /usr/share/genius/genius.txt
-  /usr/share/genius/gtksourceview/genius.lang
-  /usr/share/locale/ar/LC_MESSAGES/genius.mo
-  /usr/share/locale/az/LC_MESSAGES/genius.mo
-  /usr/share/locale/ca/LC_MESSAGES/genius.mo
-  /usr/share/locale/cs/LC_MESSAGES/genius.mo
-  /usr/share/locale/de/LC_MESSAGES/genius.mo
-  /usr/share/locale/dz/LC_MESSAGES/genius.mo
-  /usr/share/locale/el/LC_MESSAGES/genius.mo
-  /usr/share/locale/en_CA/LC_MESSAGES/genius.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/genius.mo
-  /usr/share/locale/es/LC_MESSAGES/genius.mo
-  /usr/share/locale/fr/LC_MESSAGES/genius.mo
-  /usr/share/locale/ga/LC_MESSAGES/genius.mo
-  /usr/share/locale/hi/LC_MESSAGES/genius.mo
-  /usr/share/locale/hr/LC_MESSAGES/genius.mo
-  /usr/share/locale/it/LC_MESSAGES/genius.mo
-  /usr/share/locale/ja/LC_MESSAGES/genius.mo
-  /usr/share/locale/ko/LC_MESSAGES/genius.mo
-  /usr/share/locale/lv/LC_MESSAGES/genius.mo
-  /usr/share/locale/mk/LC_MESSAGES/genius.mo
-  /usr/share/locale/ml/LC_MESSAGES/genius.mo
-  /usr/share/locale/nb/LC_MESSAGES/genius.mo
-  /usr/share/locale/ne/LC_MESSAGES/genius.mo
-  /usr/share/locale/nl/LC_MESSAGES/genius.mo
-  /usr/share/locale/oc/LC_MESSAGES/genius.mo
-  /usr/share/locale/pa/LC_MESSAGES/genius.mo
-  /usr/share/locale/pl/LC_MESSAGES/genius.mo
-  /usr/share/locale/pt/LC_MESSAGES/genius.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/genius.mo
-  /usr/share/locale/rw/LC_MESSAGES/genius.mo
-  /usr/share/locale/sq/LC_MESSAGES/genius.mo
-  /usr/share/locale/sr/LC_MESSAGES/genius.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/genius.mo
-  /usr/share/locale/sv/LC_MESSAGES/genius.mo
-  /usr/share/locale/zh_CN/LC_MESSAGES/genius.mo
-  /usr/share/locale/zh_TW/LC_MESSAGES/genius.mo
-
-(gnome-genius)
-  /etc/postinstall/genius.sh
-  /usr/bin/gnome-genius.exe
-  /usr/lib/genius/genius-readline-helper-fifo.exe
-  /usr/share/application-registry/genius.applications
-  /usr/share/applications/gnome-genius.desktop
-  /usr/share/gnome/help/genius/C/figures/genius_window.png
-  /usr/share/gnome/help/genius/C/figures/line_plot.png
-  /usr/share/gnome/help/genius/C/figures/line_plot_graph.png
-  /usr/share/gnome/help/genius/C/figures/parametric.png
-  /usr/share/gnome/help/genius/C/figures/parametric_graph.png
-  /usr/share/gnome/help/genius/C/figures/surface_graph.png
-  /usr/share/gnome/help/genius/C/gel-function-list.xml
-  /usr/share/gnome/help/genius/C/genius.xml
-  /usr/share/gnome/help/genius/C/legal.xml
-  /usr/share/icons/hicolor/32x32/apps/genius-stock-plot.png
-  /usr/share/icons/hicolor/32x32/apps/gnome-genius.png
-  /usr/share/icons/hicolor/48x48/apps/genius-stock-plot.png
-  /usr/share/icons/hicolor/48x48/apps/gnome-genius.png
-  /usr/share/mime-info/genius.keys
-  /usr/share/mime-info/genius.mime
-  /usr/share/mime/packages/genius.xml
-  /usr/share/omf/genius/genius-C.omf
-
-------------------
-
 Port Notes:
+
+----- version 1.0.8-1 -----
+Version bump.
 
 ----- version 1.0.7-1 -----
 Version bump.
