@@ -1,5 +1,5 @@
 category: Gnome Math
-requires: genius libgcc1 libglib2.0_0 libgmp3 libgnomevfs2_0 libgtk2.0_0 libgtksourceview2.0_0 libintl8 libmpfr1 libncurses9 libpango1.0_0 libreadline7 libvte9
+requires: genius libgcc1 libglib2.0_0 libgmp3 libgnomevfs2_0 libgtk2.0_0 libgtksourceview2.0_0 libintl8 libmpfr1 libncurses10 libpango1.0_0 libreadline7 libvte9
 external-source: genius
 sdesc: "GNOME mathematical tool and extension language (CLI)"
 ldesc: "Genius is a general purpose calculator program similiar in some 
