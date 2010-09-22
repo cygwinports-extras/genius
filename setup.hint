@@ -1,5 +1,5 @@
 category: Gnome Math
-requires: libgcc1 libglib2.0_0 libgmp3 libintl8 libmpfr1 libncurses10 libreadline7
+requires: libglib2.0_0 libgmp3 libintl8 libmpfr1 libncurses10 libreadline7
 sdesc: "GNOME mathematical tool and extension language (CLI)"
 ldesc: "Genius is a general purpose calculator program similiar in some 
 aspects to BC, Matlab, Maple or Mathematica. It is useful both as a 
