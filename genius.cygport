@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="genius"
-VERSION=1.0.17
+VERSION=1.0.20
 RELEASE=1
 CATEGORY="Math"
 SUMMARY="Mathematical tool and extension language"
@@ -29,5 +29,4 @@ gnome_genius_CONTENTS="etc/ usr/bin/gnome-genius.exe usr/libexec/
 CYGCONF_ARGS="
 	--disable-compile-warnings
 	--disable-update-mimedb
-	ac_cv_lib_termcap_tgetent=no
 "
